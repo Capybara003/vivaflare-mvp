@@ -12,7 +12,7 @@ const SidebarComponent = () => {
         { title: 'Upload', route: '/upload' },
     ]
     const SocialFeatures = [
-        'For You', 'Following', 'Explore'
+        'For You', 'Following', 'Community', 'Backstage'
     ]
     const Settings = [
         { title: 'My Profile', route: '/my-profile' },
@@ -25,7 +25,7 @@ const SidebarComponent = () => {
                     <img src="/image/sidebar/home.svg" alt="home" />
                 </SidebarButton>
             </div>
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-2">
                 <div className="flex flex-col gap-2">
                     {eventButtons.map((button) => (
                         <SidebarButton isSelected={pathname === button.route} onclick={() => router.push(button.route)} key={button.title}>
@@ -33,22 +33,8 @@ const SidebarComponent = () => {
                         </SidebarButton>
                     ))}
                 </div>
-                <div className="flex flex-col gap-2 pb-12">
-                    <div className="pb-12 flex justify-center">
-                        <select
-                            value={isShow ? 'show' : 'hiden'}
-                            onChange={() => setIsShow(!isShow)}
-                            className="px-3 py-2 rounded-md bg-transparent text-sm flex flex-col gap-4 outline-0 cursor-pointer"
-                        >
-                            <option className="bg-[#121212] text-white rounded-xl" value="show">
-                                Showing
-                            </option>
-                            <option className="bg-[#121212] text-white rounded-xl" value="hiden">
-                                Hiding
-                            </option>
-                        </select>
-                    </div>
-                    {isShow ? SocialFeatures.map((feature) => (
+                <div className="flex flex-col gap-2">
+                    {SocialFeatures.map((feature) => (
                         <SidebarButton
                             key={feature}
                             isSelected={selectedFeature === feature}
@@ -56,17 +42,16 @@ const SidebarComponent = () => {
                         >
                             {feature}
                         </SidebarButton>
-                    )) : null}
-                </div>
-                <div className="flex flex-col gap-2">
-                    {Settings.map((setting) => (
-                        <SidebarButton isSelected={pathname === setting.route} onclick={() => router.push(setting.route)} key={setting.title}>
-                            {setting.title}
-                        </SidebarButton>
                     ))}
                 </div>
             </div>
-            <button className=" absolute size-10 bg-[#452193] rounded-full bottom-17 flex justify-center items-center text-2xl" onClick={() => router.push("/help")}>
+            <div className="relative rounded-full w-[53px] aspect-square bg-gradient-to-b from-[#00BDF1] to-[#7538F9] flex justify-center items-center mt-[27px]">
+                <img src={"/image/header/profile.png"} className="flex justify-center items-center w-[50px] rounded-full h-[50px] object-cover" />
+                <div className="absolute size-4 bg-[#452193] rounded-full bottom-[2px] -right-[4px] flex justify-center items-center">
+                    +
+                </div>
+            </div>
+            <button className="size-10 bg-[#16171E] rounded-full bottom-17 flex justify-center items-center text-center text-2xl border-[0.5px]" onClick={() => router.push("/help")}>
                 ?
             </button>
         </div >

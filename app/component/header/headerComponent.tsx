@@ -49,9 +49,6 @@ const Header = () => {
                         </div>
                     </div>
                 }
-                <div className="whitespace-nowrap">
-                    Display Mode
-                </div>
             </div>
         </div>
     )
