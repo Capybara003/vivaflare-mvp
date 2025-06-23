@@ -17,9 +17,9 @@ const CreateSidebar = () => {
                     {isShow ? <FaChevronLeft /> : <FaChevronRight />}
                 </div>
             </div>
-            <div className="flex justify-center w-full">
+            {isShow && <div className="flex justify-center w-full">
                 <img src={'/image/launchevent/creativity.svg'} className="w-[140px]" />
-            </div>
+            </div>}
             {isShow && <div className="flex flex-col gap-[10px]">
                 {
                     events.map((event) => {
