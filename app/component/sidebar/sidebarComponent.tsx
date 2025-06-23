@@ -47,11 +47,11 @@ const SidebarComponent = () => {
             </div>
             <div className="relative rounded-full w-[53px] aspect-square bg-gradient-to-b from-[#00BDF1] to-[#7538F9] flex justify-center items-center mt-[27px]">
                 <img src={"/image/header/profile.png"} className="flex justify-center items-center w-[50px] rounded-full h-[50px] object-cover" />
-                <div className="absolute size-4 bg-[#452193] rounded-full bottom-[2px] -right-[4px] flex justify-center items-center">
+                <div className="absolute size-4 bg-[#452193] text-white rounded-full bottom-[2px] -right-[4px] flex justify-center items-center">
                     +
                 </div>
             </div>
-            <button className="size-10 bg-[#16171E] rounded-full bottom-17 flex justify-center items-center text-center text-2xl border-[0.5px]" onClick={() => router.push("/help")}>
+            <button className="size-10 bg-[#16171E] rounded-full text-white bottom-17 flex justify-center items-center text-center text-2xl border-[0.5px]" onClick={() => router.push("/help")}>
                 ?
             </button>
         </div >
