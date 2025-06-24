@@ -42,8 +42,15 @@ const Create = () => {
                 </div>
                 <div className="flex flex-col gap-8">
                     <p className="text-[24px] text-white font-semibold">Choose Event Type</p>
-                    <div className="flex gap-3">
-                        
+                    <div className="flex gap-3 justify-center items-center">
+                        <div className="bg-black flex flex-col justify-center items-center rounded-md px-[135px] pt-[305px] pb-[125px] text-center">
+                            <p className="text-white text-[16px]">Everyone will be able to discover your event, RSVP, or grab tickets.</p>
+                            <p className="text-white font-semibold text-[20px]">PUBLIC EVENTS</p>
+                        </div>
+                        <div className="bg-black flex flex-col justify-center items-center rounded-md px-[135px] pt-[305px] pb-[125px] text-center">
+                            <p className="text-white text-[16px]">Only people you invite will be able to discover your event, RSVP, or grab tickets.</p>
+                            <p className="text-white font-semibold text-[20px]">PRIVATE EVENTS</p>
+                        </div>
                     </div>
                 </div>
             </div>
