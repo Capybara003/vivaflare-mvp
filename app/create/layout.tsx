@@ -8,7 +8,7 @@ export default function CreateLayout({
     return (
         <div className="flex" style={{ height: '-webkit-fill-available' }}>
             {/* Optional: Add header, sidebar, etc. here */}
-            <div className="bg-[#15121B] mt-6 rounded-tl-[40px]">
+            <div className=" mt-6 rounded-tl-[40px]">
                 <CreateSidebar />
             </div>
             <div className="w-full">

@@ -19,7 +19,7 @@ const SidebarComponent = () => {
         { title: 'Settings', route: '/settings' }
     ]
     return (
-        <div className="w-[150px] h-full bg-[#121212] py-[72px] px-5 flex flex-col items-center gap-12 relative">
+        <div className="w-[150px] h-full py-[72px] px-5 flex flex-col items-center gap-12 relative">
             <div className="w-16">
                 <SidebarButton isSelected={pathname === '/'} onclick={() => router.push('/')}>
                     <img src="/image/sidebar/home.svg" alt="home" />

@@ -1,6 +1,6 @@
 const SearchEventPage = () => {
     return (
-        <div className="mt-6 bg-[#15121B] rounded-t-[40px] flex flex-col gap-16 justify-center items-center" style={{ height: '-webkit-fill-available' }}>
+        <div className="mt-6  rounded-t-[40px] flex flex-col gap-16 justify-center items-center" style={{ height: '-webkit-fill-available' }}>
             <div className="flex flex-col items-center">
                 <img src={"/image/launchevent/creativity.svg"}/>
             </div>

@@ -30,9 +30,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex flex-col`}
       >
         <Header />
-        <div className="h-full w-screen flex flex-1/2">
+        <div className="h-full w-screen flex flex-1/2 bg-gradient-to-b from-[#110C1A] to-black">
           <SidebarComponent />
-          <div className="bg-[#121212] flex-1/2">
+          <div className="flex-1/2">
             {children}
           </div>
         </div>

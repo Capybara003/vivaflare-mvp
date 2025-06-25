@@ -15,7 +15,7 @@ const Create = () => {
         { img: '/image/launchevent/backstage.svg', title: 'Backstage' }
     ]
     return (
-        <div className="flex flex-col gap-16 mt-[24px] pt-5 pb-6 pr-[90px] bg-[#15121B] rounded-tr-[40px] flex-1/2" style={{ height: '-webkit-fill-available' }}>
+        <div className="flex flex-col gap-16 mt-[24px] pt-5 pb-6 pr-[90px]  rounded-tr-[40px] flex-1/2" style={{ height: '-webkit-fill-available' }}>
             <div className="flex flex-col gap-[26px] px-[10px] py-[5px]">
                 <p className="text-[32px] text-white font-semibold">My Events</p>
                 <div className="flex justify-between pr-[80px]">
